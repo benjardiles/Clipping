@@ -334,15 +334,15 @@ public class Clipping extends JPanel {
             SwingWorker<ArrayList<Point>, Void> dataLoader = new SwingWorker<>() {
                 @Override
                 protected ArrayList<Point> doInBackground() throws Exception {
-                    ArrayList<Point> points = cargarPoint("C:\\Users\\Benja\\Desktop\\Clipping\\nodes.xml");
+                    ArrayList<Point> points = cargarPoint("C:\\Users\\Benja\\Documents\\GitHub\\ProyectoPIPA_Colab\\nodes.xml");
                     return points;
                 }
-
+                //C:\Users\Benja\Documents\GitHub\ProyectoPIPA_Colab
                 @Override
                 protected void done() {
                     try {
                         ArrayList<Point> points = get();
-                        ArrayList<Edge> edges = cargarEdge("C:\\Users\\Benja\\Desktop\\Clipping\\edges.xml");
+                        ArrayList<Edge> edges = cargarEdge("C:\\Users\\Benja\\Documents\\GitHub\\ProyectoPIPA_Colab\\edges.xml");
                         System.out.println("Cantidad de nodos (points): " + points.size());
                         System.out.println("Cantidad de aristas (edges): " + edges.size());
 
