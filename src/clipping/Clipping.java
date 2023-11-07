@@ -395,6 +395,7 @@ public class Clipping extends JPanel {
         }
         return new ArrayList<>();
     }
+    
 
     public static ArrayList<Edge> cargarEdge(String filePath) {
         ExecutorService executor = Executors.newSingleThreadExecutor();
